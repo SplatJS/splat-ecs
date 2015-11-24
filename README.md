@@ -1,8 +1,8 @@
-# SplatJS
+# splat-ecs
 
 A 2d HTML5 Canvas game engine
 
-SplatJS is a 2d game engine made for creating multi-platform games entirely in JavaScript.
+Splat ECS is a 2d game engine made for creating multi-platform games entirely in JavaScript. Splat ECS is built around [entity component systems](https://en.wikipedia.org/wiki/Entity_component_system), which is flexible and allows composition of behaviors.
 
 # Features
 
