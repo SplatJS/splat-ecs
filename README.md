@@ -26,18 +26,14 @@ SplatJS is a 2d game engine made for creating multi-platform games entirely in J
 
 SplatJS works in PhoneGap/Cordova, but it seems like the apps it produces lack hardware acceleration, making games unplayable.
 
-# Download a standalone SplatJS:
-
-* 3.0.2 [uncompressed](https://splatjs.github.io/download/splat-3.0.2.js) - [minified](https://splatjs.github.io/download/splat-3.0.2.min.js)
-
 # Install through [NPM](https://www.npmjs.org)
 
 ```
-$ npm install --save splatjs
+$ npm install --save splat-ecs
 ```
 Then require SplatJS into your game:
 ```
-var Splat = require("splat");
+var Splat = require("splat-ecs");
 ```
 Then use [browserify](http://browserify.org/) to bundle your game as a single JavaScript file for the browser.
 
