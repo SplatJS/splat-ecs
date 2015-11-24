@@ -24,20 +24,20 @@ Splat ECS is a 2d game engine made for creating multi-platform games entirely in
 * iOS using [Ejecta](http://impactjs.com/ejecta)
 * Chrome Web Store
 
-SplatJS works in PhoneGap/Cordova, but it seems like the apps it produces lack hardware acceleration, making games unplayable.
+Splat ECS works in PhoneGap/Cordova, but it seems like the apps it produces lack hardware acceleration, making games unplayable.
 
 # Install through [NPM](https://www.npmjs.org)
 
 ```
 $ npm install --save splat-ecs
 ```
-Then require SplatJS into your game:
+Then require Splat ECS into your game:
 ```
 var Splat = require("splat-ecs");
 ```
 Then use [browserify](http://browserify.org/) to bundle your game as a single JavaScript file for the browser.
 
-# Games using SplatJS
+# Games using Splat ECS
 
 * [Splat Pong](https://github.com/SplatJS/splatpong) is a good tutorial project to read through.
 * [SyRUSH](http://twoscoopgames.com/syrush/)
