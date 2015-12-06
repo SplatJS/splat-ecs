@@ -1,3 +1,7 @@
+# 0.0.1
+
+Add a way to remove a deleted entity from the collision detection cache.
+
 # 3.0.2
 
 Fix keyboard events bubbling outside of game. Helps when a game is inside of an iframe.
