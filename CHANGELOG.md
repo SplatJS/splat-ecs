@@ -1,3 +1,8 @@
+# 0.1.0
+
+Add matchParent system.
+Allow sound loop start and end settings
+
 # 0.0.1
 
 Add a way to remove a deleted entity from the collision detection cache.
