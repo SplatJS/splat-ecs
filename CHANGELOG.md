@@ -1,3 +1,7 @@
+# 0.2.0
+
+Support rotation when drawing images.
+
 # 0.1.1
 
 Log more info on no such image error
