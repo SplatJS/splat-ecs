@@ -1,6 +1,7 @@
 # 0.3.0
 
 Support scaling of viewport through camera
+Draw custom buffer for an entity if it is specified
 
 # 0.2.0
 
