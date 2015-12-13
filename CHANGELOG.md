@@ -1,3 +1,7 @@
+# 0.3.1
+
+Un-scale the viewport when it is reset
+
 # 0.3.0
 
 Support scaling of viewport through camera
