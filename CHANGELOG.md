@@ -1,3 +1,7 @@
+# 0.1.1
+
+Log more info on no such image error
+
 # 0.1.0
 
 Add matchParent system.
