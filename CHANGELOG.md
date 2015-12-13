@@ -1,3 +1,7 @@
+# 0.3.0
+
+Support scaling of viewport through camera
+
 # 0.2.0
 
 Support rotation when drawing images.
