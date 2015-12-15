@@ -1,3 +1,7 @@
+# 0.3.2
+
+Add method to reset box collider cache
+
 # 0.3.1
 
 Un-scale the viewport when it is reset
