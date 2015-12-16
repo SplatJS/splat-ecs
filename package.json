@@ -5,7 +5,7 @@
   "main": "lib/main.js",
   "scripts": {
     "lint-js": "eslint lib",
-    "build-docs": "find lib -iname \"*.js\" -o -iname \"*.jsdoc\" | xargs jsdoc -d docs README.md",
+    "build-docs": "documentation -f html -o docs",
     "build": "npm run lint-js && npm run build-docs"
   },
   "repository": {
@@ -31,7 +31,7 @@
     "time-accumulator": "0.0.0"
   },
   "devDependencies": {
-    "eslint": "^1.10.1",
-    "jsdoc": "^3.3.0-alpha5"
+    "documentation": "^3.0.4",
+    "eslint": "^1.10.1"
   }
 }
