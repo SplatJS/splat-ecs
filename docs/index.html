@@ -1,0 +1,1713 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>splat-ecs 0.3.2 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro:400,500,700' rel='stylesheet' type='text/css'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation'>
+  <div class='container'>
+    <div class='clearfix md-mxn2'>
+      <div class='fixed md-show fix-3 overflow-auto max-height-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>splat-ecs</h3>
+          <div class='mb1'><code>0.3.2</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block field'
+            type='text' />
+          <div id='toc'>
+              <a
+                href='#SoundLoader'
+                class='block bold'>
+                SoundLoader
+              </a>
+                <a
+                  href='#SoundLoader.allLoaded'
+                  class='regular block'>
+                  #allLoaded
+                </a>
+                <a
+                  href='#SoundLoader.isMuted'
+                  class='regular block'>
+                  #isMuted
+                </a>
+                <a
+                  href='#SoundLoader.load'
+                  class='regular block'>
+                  #load
+                </a>
+                <a
+                  href='#SoundLoader.mute'
+                  class='regular block'>
+                  #mute
+                </a>
+                <a
+                  href='#SoundLoader.play'
+                  class='regular block'>
+                  #play
+                </a>
+                <a
+                  href='#SoundLoader.setVolume'
+                  class='regular block'>
+                  #setVolume
+                </a>
+                <a
+                  href='#SoundLoader.stop'
+                  class='regular block'>
+                  #stop
+                </a>
+                <a
+                  href='#SoundLoader.unmute'
+                  class='regular block'>
+                  #unmute
+                </a>
+              <a
+                href='#ImageLoader'
+                class='block bold'>
+                ImageLoader
+              </a>
+                <a
+                  href='#ImageLoader.allLoaded'
+                  class='regular block'>
+                  #allLoaded
+                </a>
+                <a
+                  href='#ImageLoader.get'
+                  class='regular block'>
+                  #get
+                </a>
+                <a
+                  href='#ImageLoader.load'
+                  class='regular block'>
+                  #load
+                </a>
+              <a
+                href='#AStar'
+                class='block bold'>
+                AStar
+              </a>
+                <a
+                  href='#AStar.heuristic'
+                  class='regular block'>
+                  #heuristic
+                </a>
+                <a
+                  href='#AStar.search'
+                  class='regular block'>
+                  #search
+                </a>
+              <a
+                href='#authFirst'
+                class='block bold'>
+                authFirst
+              </a>
+              <a
+                href='#BinaryHeap'
+                class='block bold'>
+                BinaryHeap
+              </a>
+                <a
+                  href='#BinaryHeap.deleteRoot'
+                  class='regular block'>
+                  #deleteRoot
+                </a>
+                <a
+                  href='#BinaryHeap.indexOf'
+                  class='regular block'>
+                  #indexOf
+                </a>
+                <a
+                  href='#BinaryHeap.insert'
+                  class='regular block'>
+                  #insert
+                </a>
+              <a
+                href='#buffer'
+                class='block bold'>
+                buffer
+              </a>
+              <a
+                href='#buffer'
+                class='block bold'>
+                buffer
+              </a>
+              <a
+                href='#chromeStorageGet'
+                class='block bold'>
+                chromeStorageGet
+              </a>
+              <a
+                href='#chromeStorageSet'
+                class='block bold'>
+                chromeStorageSet
+              </a>
+              <a
+                href='#Mouse'
+                class='block bold'>
+                Mouse
+              </a>
+                <a
+                  href='#Mouse.consumePressed'
+                  class='regular block'>
+                  #consumePressed
+                </a>
+                <a
+                  href='#Mouse.isPressed'
+                  class='regular block'>
+                  #isPressed
+                </a>
+                <a
+                  href='#Mouse.supportsTouch'
+                  class='regular block'>
+                  #supportsTouch
+                </a>
+              <a
+                href='#NinePatch'
+                class='block bold'>
+                NinePatch
+              </a>
+                <a
+                  href='#NinePatch.draw'
+                  class='regular block'>
+                  #draw
+                </a>
+              <a
+                href='#flipBufferHorizontally'
+                class='block bold'>
+                flipBufferHorizontally
+              </a>
+              <a
+                href='#flipBufferVertically'
+                class='block bold'>
+                flipBufferVertically
+              </a>
+              <a
+                href='#height'
+                class='block bold'>
+                height
+              </a>
+              <a
+                href='#hide'
+                class='block bold'>
+                hide
+              </a>
+              <a
+                href='#id'
+                class='block bold'>
+                id
+              </a>
+              <a
+                href='#isAtBottom'
+                class='block bold'>
+                isAtBottom
+              </a>
+              <a
+                href='#leaderboard'
+                class='block bold'>
+                leaderboard
+              </a>
+              <a
+                href='#length'
+                class='block bold'>
+                length
+              </a>
+              <a
+                href='#makeBuffer'
+                class='block bold'>
+                makeBuffer
+              </a>
+              <a
+                href='#math'
+                class='block bold'>
+                math
+              </a>
+                <a
+                  href='#math.Random'
+                  class='regular block'>
+                  .Random
+                </a>
+              <a
+                href='#name'
+                class='block bold'>
+                name
+              </a>
+              <a
+                href='#onmouseup'
+                class='block bold'>
+                onmouseup
+              </a>
+              <a
+                href='#onmouseupHandler'
+                class='block bold'>
+                onmouseupHandler
+              </a>
+              <a
+                href='#openUrl'
+                class='block bold'>
+                openUrl
+              </a>
+              <a
+                href='#oscillate'
+                class='block bold'>
+                oscillate
+              </a>
+              <a
+                href='#platform'
+                class='block bold'>
+                platform
+              </a>
+              <a
+                href='#platform'
+                class='block bold'>
+                platform
+              </a>
+              <a
+                href='#platform'
+                class='block bold'>
+                platform
+              </a>
+              <a
+                href='#rotateClockwise'
+                class='block bold'>
+                rotateClockwise
+              </a>
+              <a
+                href='#rotateCounterclockwise'
+                class='block bold'>
+                rotateCounterclockwise
+              </a>
+              <a
+                href='#saveDataGetFinished'
+                class='block bold'>
+                saveDataGetFinished
+              </a>
+              <a
+                href='#saveDataSetFinished'
+                class='block bold'>
+                saveDataSetFinished
+              </a>
+              <a
+                href='#touches'
+                class='block bold'>
+                touches
+              </a>
+              <a
+                href='#width'
+                class='block bold'>
+                width
+              </a>
+              <a
+                href='#x'
+                class='block bold'>
+                x
+              </a>
+              <a
+                href='#y'
+                class='block bold'>
+                y
+              </a>
+          </div>
+        </div>
+      </div>
+      <div class='fix-margin-3'>
+        <div class='px2'>
+<div class='py1'><section class='py2 clearfix'>
+  <h2 id='SoundLoader' class='mt0'>
+    SoundLoader<span class='gray'>(onLoad)</span>
+  </h2>
+  <p>Loads sound files and lets you know when they&apos;re all available. An instance of SoundLoader is available as <a href="Splat.Game#sounds"><code>Splat.Game#sounds</code></a>.
+This implementation uses the Web Audio API, and if that is not available it automatically falls back to the HTML5 &lt;audio&gt; tag.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li> <strong>onLoad</strong>
+          :
+          <div class='force-inline'>
+            
+          </div>
+        </li>
+    </ul>
+      <h4>Instance members</h4>
+        <div class='collapsible' id='SoundLoader.allLoaded'>
+          <a href='#SoundLoader.allLoaded'>
+            <code>
+              #allLoaded<span class='gray'></span>
+            </code>
+            <div class='force-inline'>
+              <p>Test if all sounds have loaded.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='SoundLoader.allLoaded' class='mt0'>
+                allLoaded<span class='gray'></span>
+              </h2>
+              <p>Test if all sounds have loaded.</p>
+            
+                  <h4>Returns</h4>
+                  <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code></code>
+                  
+                  <div class='force-inline'>
+                    
+                  </div>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='SoundLoader.isMuted'>
+          <a href='#SoundLoader.isMuted'>
+            <code>
+              #isMuted<span class='gray'></span>
+            </code>
+            <div class='force-inline'>
+              <p>Test if the volume is currently muted.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='SoundLoader.isMuted' class='mt0'>
+                isMuted<span class='gray'></span>
+              </h2>
+              <p>Test if the volume is currently muted.</p>
+            
+                  <h4>Returns</h4>
+                  <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code></code>
+                  :
+                  <div class='force-inline'>
+                    <p>True if the volume is currently muted.</p>
+            
+                  </div>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='SoundLoader.load'>
+          <a href='#SoundLoader.load'>
+            <code>
+              #load<span class='gray'>(name, path)</span>
+            </code>
+            <div class='force-inline'>
+              <p>Load an audio file.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='SoundLoader.load' class='mt0'>
+                load<span class='gray'>(name, path)</span>
+              </h2>
+              <p>Load an audio file.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code> <strong>name</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The name you want to use when you <a href="SoundLoader#play"><code>SoundLoader#play</code></a> the sound.</p>
+            
+                      </div>
+                    </li>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code> <strong>path</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The path of the sound file.</p>
+            
+                      </div>
+                    </li>
+                </ul>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='SoundLoader.mute'>
+          <a href='#SoundLoader.mute'>
+            <code>
+              #mute<span class='gray'></span>
+            </code>
+            <div class='force-inline'>
+              <p>Silence all sounds. Sounds keep playing, but at zero volume. Call <a href="SoundLoader#unmute"><code>SoundLoader#unmute</code></a> to restore the previous volume level.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='SoundLoader.mute' class='mt0'>
+                mute<span class='gray'></span>
+              </h2>
+              <p>Silence all sounds. Sounds keep playing, but at zero volume. Call <a href="SoundLoader#unmute"><code>SoundLoader#unmute</code></a> to restore the previous volume level.</p>
+            
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='SoundLoader.play'>
+          <a href='#SoundLoader.play'>
+            <code>
+              #play<span class='gray'>(name, [loop])</span>
+            </code>
+            <div class='force-inline'>
+              <p>Play a sound.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='SoundLoader.play' class='mt0'>
+                play<span class='gray'>(name, [loop])</span>
+              </h2>
+              <p>Play a sound.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code> <strong>name</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The name given to the sound during <a href="SoundLoader#load"><code>SoundLoader#load</code></a></p>
+            
+                      </div>
+                    </li>
+                    <li><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>]</code> <strong>loop</strong>
+                        (default <code>undefined</code>)
+                      :
+                      <div class='force-inline'>
+                        <p>A hash containing loopStart and loopEnd options. To stop a looped sound use <a href="SoundLoader#stop"><code>SoundLoader#stop</code></a>.</p>
+            
+                      </div>
+                    </li>
+                </ul>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='SoundLoader.setVolume'>
+          <a href='#SoundLoader.setVolume'>
+            <code>
+              #setVolume<span class='gray'>(gain)</span>
+            </code>
+            <div class='force-inline'>
+              <p>Set the volume of all sounds.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='SoundLoader.setVolume' class='mt0'>
+                setVolume<span class='gray'>(gain)</span>
+              </h2>
+              <p>Set the volume of all sounds.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>gain</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The desired volume level. A number between 0.0 and 1.0, with 0.0 being silent, and 1.0 being maximum volume.</p>
+            
+                      </div>
+                    </li>
+                </ul>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='SoundLoader.stop'>
+          <a href='#SoundLoader.stop'>
+            <code>
+              #stop<span class='gray'>(name)</span>
+            </code>
+            <div class='force-inline'>
+              <p>Stop playing a sound. This currently only stops playing a sound that was looped earlier, and doesn&apos;t stop a sound mid-play. Patches welcome.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='SoundLoader.stop' class='mt0'>
+                stop<span class='gray'>(name)</span>
+              </h2>
+              <p>Stop playing a sound. This currently only stops playing a sound that was looped earlier, and doesn&apos;t stop a sound mid-play. Patches welcome.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code> <strong>name</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The name given to the sound during <a href="SoundLoader#load"><code>SoundLoader#load</code></a></p>
+            
+                      </div>
+                    </li>
+                </ul>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='SoundLoader.unmute'>
+          <a href='#SoundLoader.unmute'>
+            <code>
+              #unmute<span class='gray'></span>
+            </code>
+            <div class='force-inline'>
+              <p>Restore volume to whatever value it was before <a href="SoundLoader#mute"><code>SoundLoader#mute</code></a> was called.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='SoundLoader.unmute' class='mt0'>
+                unmute<span class='gray'></span>
+              </h2>
+              <p>Restore volume to whatever value it was before <a href="SoundLoader#mute"><code>SoundLoader#mute</code></a> was called.</p>
+            
+            </section>
+          </div>
+        </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='ImageLoader' class='mt0'>
+    ImageLoader<span class='gray'>(onLoad)</span>
+  </h2>
+  <p>Loads <a href="external:image"><code>external:image</code></a>s and lets you know when they&apos;re all available. An instance of ImageLoader is available as <a href="Splat.Game#images"><code>Splat.Game#images</code></a>.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li> <strong>onLoad</strong>
+          :
+          <div class='force-inline'>
+            
+          </div>
+        </li>
+    </ul>
+      <h4>Instance members</h4>
+        <div class='collapsible' id='ImageLoader.allLoaded'>
+          <a href='#ImageLoader.allLoaded'>
+            <code>
+              #allLoaded<span class='gray'></span>
+            </code>
+            <div class='force-inline'>
+              <p>Test if all <a href="external:image"><code>external:image</code></a>s have loaded.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='ImageLoader.allLoaded' class='mt0'>
+                allLoaded<span class='gray'></span>
+              </h2>
+              <p>Test if all <a href="external:image"><code>external:image</code></a>s have loaded.</p>
+            
+                  <h4>Returns</h4>
+                  <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code></code>
+                  
+                  <div class='force-inline'>
+                    
+                  </div>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='ImageLoader.get'>
+          <a href='#ImageLoader.get'>
+            <code>
+              #get<span class='gray'>(name)</span>
+            </code>
+            <div class='force-inline'>
+              <p>Retrieve a loaded <a href="external:image"><code>external:image</code></a>.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='ImageLoader.get' class='mt0'>
+                get<span class='gray'>(name)</span>
+              </h2>
+              <p>Retrieve a loaded <a href="external:image"><code>external:image</code></a>.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code> <strong>name</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The name given to the image during <a href="ImageLoader#load"><code>ImageLoader#load</code></a>.</p>
+            
+                      </div>
+                    </li>
+                </ul>
+                  <h4>Returns</h4>
+                  <code><code>external:image</code></code>
+                  
+                  <div class='force-inline'>
+                    
+                  </div>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='ImageLoader.load'>
+          <a href='#ImageLoader.load'>
+            <code>
+              #load<span class='gray'>(name, path)</span>
+            </code>
+            <div class='force-inline'>
+              <p>Load an <a href="external:image"><code>external:image</code></a>.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='ImageLoader.load' class='mt0'>
+                load<span class='gray'>(name, path)</span>
+              </h2>
+              <p>Load an <a href="external:image"><code>external:image</code></a>.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code> <strong>name</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The name you want to use when you <a href="ImageLoader#get"><code>ImageLoader#get</code></a> the <a href="external:image"><code>external:image</code></a></p>
+            
+                      </div>
+                    </li>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code> <strong>path</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The path of the <a href="external:image"><code>external:image</code></a>.</p>
+            
+                      </div>
+                    </li>
+                </ul>
+            </section>
+          </div>
+        </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='AStar' class='mt0'>
+    AStar<span class='gray'>(isWalkable)</span>
+  </h2>
+  <p>Implements the <a href="http://en.wikipedia.org/wiki/A*_search_algorithm"><code>A* pathfinding algorithm</code></a> on a 2-dimensional grid. You can use this to find a path between a source and destination coordinate while avoiding obstacles.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code>isWalkable</code> <strong>isWalkable</strong>
+          :
+          <div class='force-inline'>
+            <p>A function to test if a coordinate is walkable by the entity you&apos;re performing the pathfinding for.</p>
+
+          </div>
+        </li>
+    </ul>
+      <h4>Instance members</h4>
+        <div class='collapsible' id='AStar.heuristic'>
+          <a href='#AStar.heuristic'>
+            <code>
+              #heuristic<span class='gray'>(x, y)</span>
+            </code>
+            <div class='force-inline'>
+              <p>The <a href="http://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html"><code>A* heuristic</code></a>, commonly referred to as h(x), that estimates how far a location is from the destination. This implementation is the <a href="http://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html#manhattan-distance"><code>Manhattan method</code></a>, which is good for situations when the entity can travel in four directions. Feel free to replace this with a different heuristic implementation.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='AStar.heuristic' class='mt0'>
+                heuristic<span class='gray'>(x, y)</span>
+              </h2>
+              <p>The <a href="http://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html"><code>A* heuristic</code></a>, commonly referred to as h(x), that estimates how far a location is from the destination. This implementation is the <a href="http://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html#manhattan-distance"><code>Manhattan method</code></a>, which is good for situations when the entity can travel in four directions. Feel free to replace this with a different heuristic implementation.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>x</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The x coordinate to estimate the distance to the destination.</p>
+            
+                      </div>
+                    </li>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>y</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The y coordinate to estimate the distance to the destination.</p>
+            
+                      </div>
+                    </li>
+                </ul>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='AStar.search'>
+          <a href='#AStar.search'>
+            <code>
+              #search<span class='gray'>(srcX, srcY, destX, destY)</span>
+            </code>
+            <div class='force-inline'>
+              <p>Search for an optimal path between srcX, srcY and destX, destY, while avoiding obstacles.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='AStar.search' class='mt0'>
+                search<span class='gray'>(srcX, srcY, destX, destY)</span>
+              </h2>
+              <p>Search for an optimal path between srcX, srcY and destX, destY, while avoiding obstacles.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>srcX</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The starting x coordinate</p>
+            
+                      </div>
+                    </li>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>srcY</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The starting y coordinate</p>
+            
+                      </div>
+                    </li>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>destX</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The destination x coordinate</p>
+            
+                      </div>
+                    </li>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>destY</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The destination y coordinate</p>
+            
+                      </div>
+                    </li>
+                </ul>
+                  <h4>Returns</h4>
+                  <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code></code>
+                  :
+                  <div class='force-inline'>
+                    <p>The optimal path, in the form of an array of objects that each have an x and y property.</p>
+            
+                  </div>
+            </section>
+          </div>
+        </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='authFirst' class='mt0'>
+    authFirst<span class='gray'></span>
+  </h2>
+  <p>Show the achievements screen.</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='BinaryHeap' class='mt0'>
+    BinaryHeap<span class='gray'>(cmp)</span>
+  </h2>
+  <p>An implementation of the <a href="https://en.wikipedia.org/wiki/Binary_heap"><code>Binary Heap</code></a> data structure suitable for priority queues.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code>compareFunction</code> <strong>cmp</strong>
+          :
+          <div class='force-inline'>
+            <p>A comparison function that determines how the heap is sorted.</p>
+
+          </div>
+        </li>
+    </ul>
+      <h4>Instance members</h4>
+        <div class='collapsible' id='BinaryHeap.deleteRoot'>
+          <a href='#BinaryHeap.deleteRoot'>
+            <code>
+              #deleteRoot<span class='gray'></span>
+            </code>
+            <div class='force-inline'>
+              <p>Remove the heap&apos;s root node, and return it. The root node is whatever comes first as determined by the <a href="compareFunction"><code>compareFunction</code></a>.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='BinaryHeap.deleteRoot' class='mt0'>
+                deleteRoot<span class='gray'></span>
+              </h2>
+              <p>Remove the heap&apos;s root node, and return it. The root node is whatever comes first as determined by the <a href="compareFunction"><code>compareFunction</code></a>.</p>
+            
+                  <h4>Returns</h4>
+                  <code><code>data</code></code>
+                  :
+                  <div class='force-inline'>
+                    <p>The root node&apos;s data.</p>
+            
+                  </div>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='BinaryHeap.indexOf'>
+          <a href='#BinaryHeap.indexOf'>
+            <code>
+              #indexOf<span class='gray'>(data)</span>
+            </code>
+            <div class='force-inline'>
+              <p>Search for a node in the heap.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='BinaryHeap.indexOf' class='mt0'>
+                indexOf<span class='gray'>(data)</span>
+              </h2>
+              <p>Search for a node in the heap.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code> <strong>data</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The data to search for.</p>
+            
+                      </div>
+                    </li>
+                </ul>
+                  <h4>Returns</h4>
+                  <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code></code>
+                  :
+                  <div class='force-inline'>
+                    <p>The index of the data in the heap, or -1 if it is not found.</p>
+            
+                  </div>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='BinaryHeap.insert'>
+          <a href='#BinaryHeap.insert'>
+            <code>
+              #insert<span class='gray'>(data)</span>
+            </code>
+            <div class='force-inline'>
+              <p>Store a new node in the heap.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='BinaryHeap.insert' class='mt0'>
+                insert<span class='gray'>(data)</span>
+              </h2>
+              <p>Store a new node in the heap.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code> <strong>data</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The data to store</p>
+            
+                      </div>
+                    </li>
+                </ul>
+            </section>
+          </div>
+        </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='buffer' class='mt0'>
+    buffer<span class='gray'></span>
+  </h2>
+  
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='buffer' class='mt0'>
+    buffer<span class='gray'></span>
+  </h2>
+  
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='chromeStorageGet' class='mt0'>
+    chromeStorageGet<span class='gray'>(keys, callback)</span>
+  </h2>
+  <p>Retrieve data previously stored with <a href="Splat.saveData.set"><code>Splat.saveData.set</code></a>.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code> or <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code> <strong>keys</strong>
+          :
+          <div class='force-inline'>
+            <p>A single key or array of key names of data items to retrieve.</p>
+
+          </div>
+        </li>
+        <li><code><a href="#saveDataGetFinished">saveDataGetFinished</a></code> <strong>callback</strong>
+          :
+          <div class='force-inline'>
+            <p>A callback that is called with the data when it has been retrieved.</p>
+
+          </div>
+        </li>
+    </ul>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='chromeStorageSet' class='mt0'>
+    chromeStorageSet<span class='gray'>(data, callback)</span>
+  </h2>
+  <p>Store data for later.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code> <strong>data</strong>
+          :
+          <div class='force-inline'>
+            <p>An object containing key-value pairs of data to save.</p>
+
+          </div>
+        </li>
+        <li><code><a href="#saveDataSetFinished">saveDataSetFinished</a></code> <strong>callback</strong>
+          :
+          <div class='force-inline'>
+            <p>A callback that is called when the data has finished saving.</p>
+
+          </div>
+        </li>
+    </ul>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='Mouse' class='mt0'>
+    Mouse<span class='gray'>(canvas)</span>
+  </h2>
+  <p>Mouse and touch input handling. An instance of Mouse is available as <a href="Splat.Game#mouse"><code>Splat.Game#mouse</code></a>.</p>
+<p>The first touch will emulates a mouse press with button 0.
+This means you can use the mouse (<a href="Mouse#isPressed"><code>Mouse#isPressed</code></a>/<a href="Mouse#consumePressed"><code>Mouse#consumePressed</code></a>) APIs and your game will work on touch screens (as long as you only need the left button.</p>
+<p>A mouse press will emulate a touch if the device does not support touch.
+This means you can use <a href="Mouse#touches"><code>Mouse#touches</code></a>, and your game will still work on a PC with a mouse.
+Also, if you call <a href="Mouse#consumePressed"><code>Mouse#consumePressed</code></a> with button 0, it will add a <code>consumed:true</code> field to all current touches. This will help you prevent processing a touch multiple times.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code>external:canvas</code> <strong>canvas</strong>
+          :
+          <div class='force-inline'>
+            <p>The canvas to listen for events on.</p>
+
+          </div>
+        </li>
+    </ul>
+      <h4>Instance members</h4>
+        <div class='collapsible' id='Mouse.consumePressed'>
+          <a href='#Mouse.consumePressed'>
+            <code>
+              #consumePressed<span class='gray'>(button, [x], [y], [width], [height])</span>
+            </code>
+            <div class='force-inline'>
+              <p>Test if a mouse button is currently pressed, and was newly pressed down since the last call to consumePressed.
+If you call this with button 0, it will add a <code>consumed:true</code> field to all current touches. This will help you prevent processing a touch multiple times.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='Mouse.consumePressed' class='mt0'>
+                consumePressed<span class='gray'>(button, [x], [y], [width], [height])</span>
+              </h2>
+              <p>Test if a mouse button is currently pressed, and was newly pressed down since the last call to consumePressed.
+            If you call this with button 0, it will add a <code>consumed:true</code> field to all current touches. This will help you prevent processing a touch multiple times.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>button</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The button number to test.</p>
+            
+                      </div>
+                    </li>
+                    <li><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>]</code> <strong>x</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The left edge of a rectangle to restrict the test to. If the mouse position is outside of this rectangle, the button will not be considered pressed.</p>
+            
+                      </div>
+                    </li>
+                    <li><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>]</code> <strong>y</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The top edge of a rectangle to restrict the test to. If the mouse position is outside of this rectangle, the button will not be considered pressed.</p>
+            
+                      </div>
+                    </li>
+                    <li><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>]</code> <strong>width</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The width of a rectangle to restrict the test to. If the mouse position is outside of this rectangle, the button will not be considered pressed.</p>
+            
+                      </div>
+                    </li>
+                    <li><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>]</code> <strong>height</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The height of a rectangle to restrict the test to. If the mouse position is outside of this rectangle, the button will not be considered pressed.</p>
+            
+                      </div>
+                    </li>
+                </ul>
+                  <h4>Returns</h4>
+                  <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code></code>
+                  
+                  <div class='force-inline'>
+                    
+                  </div>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='Mouse.isPressed'>
+          <a href='#Mouse.isPressed'>
+            <code>
+              #isPressed<span class='gray'>(button, [x], [y], [width], [height])</span>
+            </code>
+            <div class='force-inline'>
+              <p>Test if a mouse button is currently pressed.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='Mouse.isPressed' class='mt0'>
+                isPressed<span class='gray'>(button, [x], [y], [width], [height])</span>
+              </h2>
+              <p>Test if a mouse button is currently pressed.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>button</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The button number to test. Button 0 is typically the left mouse button, as well as the first touch location.</p>
+            
+                      </div>
+                    </li>
+                    <li><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>]</code> <strong>x</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The left edge of a rectangle to restrict the test to. If the mouse position is outside of this rectangle, the button will not be considered pressed.</p>
+            
+                      </div>
+                    </li>
+                    <li><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>]</code> <strong>y</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The top edge of a rectangle to restrict the test to. If the mouse position is outside of this rectangle, the button will not be considered pressed.</p>
+            
+                      </div>
+                    </li>
+                    <li><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>]</code> <strong>width</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The width of a rectangle to restrict the test to. If the mouse position is outside of this rectangle, the button will not be considered pressed.</p>
+            
+                      </div>
+                    </li>
+                    <li><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>]</code> <strong>height</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The height of a rectangle to restrict the test to. If the mouse position is outside of this rectangle, the button will not be considered pressed.</p>
+            
+                      </div>
+                    </li>
+                </ul>
+                  <h4>Returns</h4>
+                  <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code></code>
+                  
+                  <div class='force-inline'>
+                    
+                  </div>
+            </section>
+          </div>
+        </div>
+        <div class='collapsible' id='Mouse.supportsTouch'>
+          <a href='#Mouse.supportsTouch'>
+            <code>
+              #supportsTouch<span class='gray'></span>
+            </code>
+            <div class='force-inline'>
+              <p>Test whether the device supports touch events. This is useful to customize messages to say either &quot;click&quot; or &quot;tap&quot;.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='Mouse.supportsTouch' class='mt0'>
+                supportsTouch<span class='gray'></span>
+              </h2>
+              <p>Test whether the device supports touch events. This is useful to customize messages to say either &quot;click&quot; or &quot;tap&quot;.</p>
+            
+                  <h4>Returns</h4>
+                  <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code></code>
+                  
+                  <div class='force-inline'>
+                    
+                  </div>
+            </section>
+          </div>
+        </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='NinePatch' class='mt0'>
+    NinePatch<span class='gray'>(image)</span>
+  </h2>
+  <p>A stretchable image that has borders.
+Similar to the <a href="https://developer.android.com/guide/topics/graphics/2d-graphics.html#nine-patch"><code>Android NinePatch</code></a>, but it only has the lines on the bottom and right edges to denote the stretchable area.
+A NinePatch is a normal picture, but has an extra 1-pixel wide column on the right edge and bottom edge. The extra column contains a black line that denotes the tileable center portion of the image. The lines are used to divide the image into nine tiles that can be automatically repeated to stretch the picture to any size without distortion.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code>external:image</code> <strong>image</strong>
+          :
+          <div class='force-inline'>
+            <p>The source image to make stretchable.</p>
+
+          </div>
+        </li>
+    </ul>
+      <h4>Instance members</h4>
+        <div class='collapsible' id='NinePatch.draw'>
+          <a href='#NinePatch.draw'>
+            <code>
+              #draw<span class='gray'>(context, x, y, width, height)</span>
+            </code>
+            <div class='force-inline'>
+              <p>Draw the image stretched to a given rectangle.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2'>
+            <section class='py2 clearfix'>
+              <h2 id='NinePatch.draw' class='mt0'>
+                draw<span class='gray'>(context, x, y, width, height)</span>
+              </h2>
+              <p>Draw the image stretched to a given rectangle.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code>external:CanvasRenderingContext2D</code> <strong>context</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The drawing context.</p>
+            
+                      </div>
+                    </li>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>x</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The left side of the rectangle.</p>
+            
+                      </div>
+                    </li>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>y</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The top of the rectangle.</p>
+            
+                      </div>
+                    </li>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>width</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The width of the rectangle.</p>
+            
+                      </div>
+                    </li>
+                    <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>height</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The height of the rectangle.</p>
+            
+                      </div>
+                    </li>
+                </ul>
+            </section>
+          </div>
+        </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='flipBufferHorizontally' class='mt0'>
+    flipBufferHorizontally<span class='gray'>(buffer)</span>
+  </h2>
+  <p>Make a horizonally-flipped copy of a buffer or image.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code>external:canvas</code> or <code>external:image</code> <strong>buffer</strong>
+          :
+          <div class='force-inline'>
+            <p>The original image</p>
+
+          </div>
+        </li>
+    </ul>
+      <h4>Returns</h4>
+      <code><code>external:canvas</code></code>
+      :
+      <div class='force-inline'>
+        <p>The flipped buffer</p>
+
+      </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='flipBufferVertically' class='mt0'>
+    flipBufferVertically<span class='gray'>(buffer)</span>
+  </h2>
+  <p>Make a vertically-flipped copy of a buffer or image.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code>external:canvas</code> or <code>external:image</code> <strong>buffer</strong>
+          :
+          <div class='force-inline'>
+            <p>The original image</p>
+
+          </div>
+        </li>
+    </ul>
+      <h4>Returns</h4>
+      <code><code>external:canvas</code></code>
+      :
+      <div class='force-inline'>
+        <p>The flipped buffer</p>
+
+      </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='height' class='mt0'>
+    height<span class='gray'></span>
+  </h2>
+  <p>The height of the ad that will show.</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='hide' class='mt0'>
+    hide<span class='gray'></span>
+  </h2>
+  <p>Hide the current advertisement.</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='id' class='mt0'>
+    id<span class='gray'>(id, percent)</span>
+  </h2>
+  <p>Report that an achievement was achieved.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code> <strong>id</strong>
+          :
+          <div class='force-inline'>
+            <p>The name of the achievement.</p>
+
+          </div>
+        </li>
+        <li><code>int</code> <strong>percent</strong>
+          :
+          <div class='force-inline'>
+            <p>The percentage of the achievement that is completed in the range of 0-100.</p>
+
+          </div>
+        </li>
+    </ul>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='isAtBottom' class='mt0'>
+    isAtBottom<span class='gray'>(isAtBottom)</span>
+  </h2>
+  <p>Show an advertisement.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code> <strong>isAtBottom</strong>
+          :
+          <div class='force-inline'>
+            <p>true if the ad should be shown at the bottom of the screen. false if it should be shown at the top.</p>
+
+          </div>
+        </li>
+    </ul>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='leaderboard' class='mt0'>
+    leaderboard<span class='gray'>(leaderboard, score)</span>
+  </h2>
+  <p>Report that a score was achieved on a leaderboard.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code> <strong>leaderboard</strong>
+          :
+          <div class='force-inline'>
+            <p>The name of the leaderboard the score is on.</p>
+
+          </div>
+        </li>
+        <li><code>int</code> <strong>score</strong>
+          :
+          <div class='force-inline'>
+            <p>The score that was achieved.</p>
+
+          </div>
+        </li>
+    </ul>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='length' class='mt0'>
+    length<span class='gray'></span>
+  </h2>
+  <p>The number of elements in the heap.</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='makeBuffer' class='mt0'>
+    makeBuffer<span class='gray'>(width, height, drawFun)</span>
+  </h2>
+  <p>Make an invisible canvas buffer, and draw on it.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>width</strong>
+          :
+          <div class='force-inline'>
+            <p>The width of the buffer</p>
+
+          </div>
+        </li>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>height</strong>
+          :
+          <div class='force-inline'>
+            <p>The height of the buffer</p>
+
+          </div>
+        </li>
+        <li><code>drawCallback</code> <strong>drawFun</strong>
+          :
+          <div class='force-inline'>
+            <p>The callback that draws on the buffer</p>
+
+          </div>
+        </li>
+    </ul>
+      <h4>Returns</h4>
+      <code><code>external:canvas</code></code>
+      :
+      <div class='force-inline'>
+        <p>The drawn buffer</p>
+
+      </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='math' class='mt0'>
+    math<span class='gray'></span>
+  </h2>
+  
+      <h4>Static members</h4>
+        <div class='collapsible' id='math.Random'>
+          <a href='#math.Random'>
+            <code>
+              .Random<span class='gray'>([seed])</span>
+            </code>
+            <div class='force-inline'>
+              <p>A seedable pseudo-random number generator. Currently a Mersenne Twister PRNG.</p>
+
+            </div>
+          </a>
+          <div class='collapser border px2 m2'>
+            <section class='py2 clearfix'>
+              <h2 id='math.Random' class='mt0'>
+                Random<span class='gray'>([seed])</span>
+              </h2>
+              <p>A seedable pseudo-random number generator. Currently a Mersenne Twister PRNG.</p>
+            
+                <h4>Parameters</h4>
+                <ul class='suppress-p-margin'>
+                    <li><code>[<code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>]</code> <strong>seed</strong>
+                      :
+                      <div class='force-inline'>
+                        <p>The seed for the PRNG.</p>
+            
+                      </div>
+                    </li>
+                </ul>
+                <h4>Examples</h4>
+            <pre class='overflow-auto'><span class="hljs-keyword">var</span> rand = <span class="hljs-keyword">new</span> Splat.math.Random(<span class="hljs-number">123</span>);
+            <span class="hljs-keyword">var</span> val = rand.random();</pre>
+            </section>
+          </div>
+        </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='name' class='mt0'>
+    name<span class='gray'>(name)</span>
+  </h2>
+  <p>Show a leaderboard screen.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code> <strong>name</strong>
+          :
+          <div class='force-inline'>
+            <p>The name of the leaderboard to show.</p>
+
+          </div>
+        </li>
+    </ul>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='onmouseup' class='mt0'>
+    onmouseup<span class='gray'></span>
+  </h2>
+  <p>A function that will be called when a mouse button is released, or a touch has stopped.
+This is useful for opening a URL with <a href="Splat.openUrl"><code>Splat.openUrl</code></a> to avoid popup blockers.</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='onmouseupHandler' class='mt0'>
+    onmouseupHandler<span class='gray'>(x, y)</span>
+  </h2>
+  <p>A function that is called when a mouse button or touch is released.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>x</strong>
+          :
+          <div class='force-inline'>
+            <p>The x coordinate of the mouse or touch that was released.</p>
+
+          </div>
+        </li>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>y</strong>
+          :
+          <div class='force-inline'>
+            <p>The y coordinate of the mouse or touch that was released.</p>
+
+          </div>
+        </li>
+    </ul>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='openUrl' class='mt0'>
+    openUrl<span class='gray'>(url)</span>
+  </h2>
+  <p>Open a url in a new window.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code> <strong>url</strong>
+          :
+          <div class='force-inline'>
+            <p>The url to open in a new window.</p>
+
+          </div>
+        </li>
+    </ul>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='oscillate' class='mt0'>
+    oscillate<span class='gray'>(current, period)</span>
+  </h2>
+  <p>Oscillate between -1 and 1 given a value and a period. This is basically a simplification on using Math.sin().</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>current</strong>
+          :
+          <div class='force-inline'>
+            <p>The current value of the number you want to oscillate.</p>
+
+          </div>
+        </li>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code> <strong>period</strong>
+          :
+          <div class='force-inline'>
+            <p>The period, or how often the number oscillates. The return value will oscillate between -1 and 1, depending on how close current is to a multiple of period.</p>
+
+          </div>
+        </li>
+    </ul>
+      <h4>Returns</h4>
+      <code><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code></code>
+      :
+      <div class='force-inline'>
+        <p>A number between -1 and 1.</p>
+
+      </div>
+    <h4>Examples</h4>
+<pre class='overflow-auto'>Splat.math.oscillate(<span class="hljs-number">0</span>, <span class="hljs-number">100</span>); <span class="hljs-comment">// returns 0</span>
+Splat.math.oscillate(<span class="hljs-number">100</span>, <span class="hljs-number">100</span>); <span class="hljs-comment">// returns 0-ish</span>
+Splat.math.oscillate(<span class="hljs-number">50</span>, <span class="hljs-number">100</span>); <span class="hljs-comment">// returns 1</span>
+Splat.math.oscillate(<span class="hljs-number">150</span>, <span class="hljs-number">100</span>); <span class="hljs-comment">// returns -1</span>
+Splat.math.oscillate(<span class="hljs-number">200</span>, <span class="hljs-number">100</span>); <span class="hljs-comment">// returns 0-ish</span></pre>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='platform' class='mt0'>
+    platform<span class='gray'></span>
+  </h2>
+  
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='platform' class='mt0'>
+    platform<span class='gray'></span>
+  </h2>
+  
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='platform' class='mt0'>
+    platform<span class='gray'></span>
+  </h2>
+  
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='rotateClockwise' class='mt0'>
+    rotateClockwise<span class='gray'>(buffer)</span>
+  </h2>
+  <p>Make a copy of a buffer that is rotated 90 degrees clockwise.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code>external:canvas</code> or <code>external:image</code> <strong>buffer</strong>
+          :
+          <div class='force-inline'>
+            <p>The original image</p>
+
+          </div>
+        </li>
+    </ul>
+      <h4>Returns</h4>
+      <code><code>external:canvas</code></code>
+      :
+      <div class='force-inline'>
+        <p>The rotated buffer</p>
+
+      </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='rotateCounterclockwise' class='mt0'>
+    rotateCounterclockwise<span class='gray'>(buffer)</span>
+  </h2>
+  <p>Make a copy of a buffer that is rotated 90 degrees counterclockwise.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code>external:canvas</code> or <code>external:image</code> <strong>buffer</strong>
+          :
+          <div class='force-inline'>
+            <p>The original image</p>
+
+          </div>
+        </li>
+    </ul>
+      <h4>Returns</h4>
+      <code><code>external:canvas</code></code>
+      :
+      <div class='force-inline'>
+        <p>The rotated buffer</p>
+
+      </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='saveDataGetFinished' class='mt0'>
+    saveDataGetFinished<span class='gray'>(err, data, keys, callback)</span>
+  </h2>
+  <p>A function that is called when save data has finished being retrieved.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">error</a></code> <strong>err</strong>
+          :
+          <div class='force-inline'>
+            <p>If defined, err is the error that occurred when retrieving the data.</p>
+
+          </div>
+        </li>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code> <strong>data</strong>
+          :
+          <div class='force-inline'>
+            <p>The key-value pairs of data that were previously saved.</p>
+
+          </div>
+        </li>
+        <li> <strong>keys</strong>
+          :
+          <div class='force-inline'>
+            
+          </div>
+        </li>
+        <li> <strong>callback</strong>
+          :
+          <div class='force-inline'>
+            
+          </div>
+        </li>
+    </ul>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='saveDataSetFinished' class='mt0'>
+    saveDataSetFinished<span class='gray'>(err, data, callback)</span>
+  </h2>
+  <p>A function that is called when save data has finished being stored.</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">error</a></code> <strong>err</strong>
+          :
+          <div class='force-inline'>
+            <p>If defined, err is the error that occurred when saving the data.</p>
+
+          </div>
+        </li>
+        <li> <strong>data</strong>
+          :
+          <div class='force-inline'>
+            
+          </div>
+        </li>
+        <li> <strong>callback</strong>
+          :
+          <div class='force-inline'>
+            
+          </div>
+        </li>
+    </ul>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='touches' class='mt0'>
+    touches<span class='gray'></span>
+  </h2>
+  <p>An array of the current touches on a touch screen device. Each touch has a <code>x</code>, <code>y</code>, and <code>id</code> field.</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='width' class='mt0'>
+    width<span class='gray'></span>
+  </h2>
+  <p>The width of the ad that will show.</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='x' class='mt0'>
+    x<span class='gray'></span>
+  </h2>
+  <p>The x coordinate of the cursor relative to the left side of the canvas.</p>
+
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
+  <h2 id='y' class='mt0'>
+    y<span class='gray'></span>
+  </h2>
+  <p>The y coordinate of the cursor relative to the top of the canvas.</p>
+
+</section>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
