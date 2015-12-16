@@ -43,15 +43,10 @@ Then use [browserify](http://browserify.org/) to bundle your game as a single Ja
 
 # Games using Splat ECS
 
-* [Splat Pong](https://github.com/SplatJS/splatpong) is a good tutorial project to read through.
-* [SyRUSH](http://twoscoopgames.com/syrush/)
-* [Stanley Squeaks and the Emerald Burrito](http://twoscoopgames.com/stanleysqueaks/)
-* [Mr. Fluffykin's Great Sorting Adventure](http://twoscoopgames.com/fluffykins/)
-* [Arkeynoid](http://mintchipleaf.com/games/ludum/)
-* [Kickbot](http://twoscoopgames.com/kickbot/)
-* [base.jump](http://mintchipleaf.com/games/basejump/)
-* [Apartment 213](http://twoscoopgames.com/apartment213/)
-* [Scurry](http://twoscoopgames.com/scurry/)
-* [Echo Bat](http://mintchipleaf.com/games/echobat/)
+* [Splat ECS starter project](https://github.com/SplatJS/splat-ecs-starter-project)
+* [Cluster Junk](https://github.com/TwoScoopGames/Cluster-Junk)
+* [Treatment and Control](https://github.com/TwoScoopGames/Treatment-and-Control)
+* [Uprooted](https://github.com/TwoScoopGames/ld32)
+* [The Day the World Changed](https://github.com/TwoScoopGames/ggj15)
 
 Send a pull request to add your game to the list!
