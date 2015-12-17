@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/SplatJS/splat-ecs",
   "dependencies": {
-    "entity-component-system": "^2.0.0-beta2",
+    "entity-component-system": "^2.0.0-beta3",
     "game-keyboard": "0.1.0",
     "mersenne-twister": "^1.0.1",
     "time-accumulator": "0.0.0"
