@@ -1,3 +1,7 @@
+# 0.4.0
+
+Upgrade to entity-component-system 2.0.0
+
 # 0.3.2
 
 Add method to reset box collider cache
