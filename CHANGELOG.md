@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.4.2] - 2015-12-19
+### Fixed
+- applyMovement2d never found entities
+
 ## [0.4.1] - 2015-12-17
 ### Fixed
 - Readme typo
