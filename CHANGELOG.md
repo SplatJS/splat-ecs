@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.5.0] - 2015-12-19
 ### Added
 - window.timeSystems() to log timings of ECS systems
+### Changed
+- Speed up advanceAnimations system
 
 ## [0.4.2] - 2015-12-19
 ### Fixed
