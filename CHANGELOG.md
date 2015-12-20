@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.6.1] - 2015-12-20
+### Fixed
+- mouse coordinates scale correctly when no css is applied to canvas
+
 ## [0.6.0] - 2015-12-20
 ### Changed
 - use box-intersect module for faster collision detection
