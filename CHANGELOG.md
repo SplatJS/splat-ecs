@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.5.0] - 2015-12-19
+### Added
+- window.timeSystems() to log timings of ECS systems
+
 ## [0.4.2] - 2015-12-19
 ### Fixed
 - applyMovement2d never found entities
