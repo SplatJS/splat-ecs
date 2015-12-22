@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ## [0.6.2] - 2015-12-21
+- add warnings about bad image component values and provide defaults for unset values
 - fix bug where animations wouldn't work
 
 ## [0.6.1] - 2015-12-20
