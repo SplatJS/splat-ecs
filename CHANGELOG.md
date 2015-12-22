@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.6.2] - 2015-12-21
+- fix bug where animations wouldn't work
+
 ## [0.6.1] - 2015-12-20
 ### Fixed
 - mouse coordinates scale correctly when no css is applied to canvas
