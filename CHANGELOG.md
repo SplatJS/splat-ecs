@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.7.0] - 2015-12-21
+- add `Input.buttonPressed()` and `Input.buttonReleased()`
+
 ## [0.6.2] - 2015-12-21
 - add warnings about bad image component values and provide defaults for unset values
 - fix bug where animations wouldn't work
