@@ -1,5 +1,10 @@
 {
     "rules": {
+        "brace-style": [
+            2,
+            "1tbs",
+            { "allowSingleLine": true }
+        ],
         "indent": [
             2,
             "tab"
