@@ -13,7 +13,9 @@
         "no-trailing-spaces": [ 2 ],
         "object-curly-spacing": [ 2, "always" ],
         "quotes": [ 2, "double" ],
-        "semi": [ 2, "always" ]
+        "semi": [ 2, "always" ],
+        "semi-spacing": [ 2, { "before": false, "after": true } ],
+        "space-after-keywords": [ 2, "always" ]
     },
     "env": {
         "browser": true,
