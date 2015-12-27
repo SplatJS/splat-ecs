@@ -5,13 +5,13 @@
             "1tbs",
             { "allowSingleLine": true }
         ],
+        "comma-style": [
+            2,
+            "last"
+        ],
         "indent": [
             2,
             "tab"
-        ],
-        "quotes": [
-            2,
-            "double"
         ],
         "linebreak-style": [
             2,
@@ -19,6 +19,10 @@
         ],
         "no-console": [
             0
+        ],
+        "quotes": [
+            2,
+            "double"
         ],
         "semi": [
             2,
