@@ -1,45 +1,19 @@
 {
     "rules": {
-        "brace-style": [
-            2,
-            "1tbs",
-            { "allowSingleLine": true }
-        ],
-        "block-spacing": [
-            2,
-            "always"
-        ],
-        "comma-style": [
-            2,
-            "last"
-        ],
-        "eol-last": [
-            2,
-            "unix"
-        ],
-        "indent": [
-            2,
-            "tab"
-        ],
-        "key-spacing": [
-            2,
-            { "beforeColon": false, "afterColon": true }
-        ],
-        "linebreak-style": [
-            2,
-            "unix"
-        ],
-        "no-console": [
-            0
-        ],
-        "quotes": [
-            2,
-            "double"
-        ],
-        "semi": [
-            2,
-            "always"
-        ]
+        "brace-style": [ 2, "1tbs", { "allowSingleLine": true } ],
+        "block-spacing": [ 2, "always" ],
+        "comma-style": [ 2, "last" ],
+        "eol-last": [ 2, "unix" ],
+        "indent": [ 2, "tab" ],
+        "key-spacing": [ 2, { "beforeColon": false, "afterColon": true } ],
+        "linebreak-style": [ 2, "unix" ],
+        "new-cap": [ 2 ],
+        "new-parens": [ 2 ],
+        "no-console": [ 0 ],
+        "no-trailing-spaces": [ 2 ],
+        "object-curly-spacing": [ 2, "always" ],
+        "quotes": [ 2, "double" ],
+        "semi": [ 2, "always" ]
     },
     "env": {
         "browser": true,
