@@ -4,11 +4,21 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.0] - 2015-12-28
+### Changed
+- automatically size the canvas based on a selectable algorithm.
+### Added
+- matchCanvasSize system to make an entity the same size as the canvas
+- matchAspectRatio system to make an entity match the aspect ratio of another entity
+
 ## [0.7.0] - 2015-12-21
+### Added
 - add `Input.buttonPressed()` and `Input.buttonReleased()`
 
 ## [0.6.2] - 2015-12-21
+### Added
 - add warnings about bad image component values and provide defaults for unset values
+### Fixed
 - fix bug where animations wouldn't work
 
 ## [0.6.1] - 2015-12-20
