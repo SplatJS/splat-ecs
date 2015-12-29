@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ## [1.0.0] - 2015-12-28
+### Removed
+- remove magical "splatjs:" way of loading systems.
+
+## [1.0.0] - 2015-12-28
 ### Changed
 - automatically size the canvas based on a selectable algorithm.
 ### Added
