@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [3.0.0] - 2015-12-30
 ### Added
 - Add `instantiatePrefab` function to instantiate new entities from prefabs
 ### Changed
@@ -10,7 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - animation frame splitting now copies all animation properties, and doesn't lose any
 
-## [1.0.0] - 2015-12-28
+## [2.0.0] - 2015-12-28
 ### Removed
 - remove magical "splatjs:" way of loading systems.
 
