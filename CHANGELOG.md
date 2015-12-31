@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [3.0.1] - 2015-12-30
+### Fixed
+- Remove deleted entities from collision lists.
+
 ## [3.0.0] - 2015-12-30
 ### Added
 - Add `instantiatePrefab` function to instantiate new entities from prefabs
