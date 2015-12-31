@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Add `instantiatePrefab` function to instantiate new entities from prefabs
+### Changed
+- `Game` constructor now loads all the json files by itself. Now it only needs 2 arguments.
+### Fixed
+- animation frame splitting now copies all animation properties, and doesn't lose any
 
 ## [1.0.0] - 2015-12-28
 ### Removed
