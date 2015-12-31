@@ -4,12 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-## [3.0.3] - 2015-12-31
+## [3.0.2] - 2015-12-30
 ### Fixed
 - Fix soundloader bug.
-
-## [3.0.2] - 2015-12-30
-### Added
 - Default rotation.x and rotation.y to the center of the entity.
 
 ## [3.0.1] - 2015-12-30
