@@ -4,7 +4,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-
 ## [3.0.3] - 2015-12-31
 ### Fixed
 - Fix soundloader bug.
