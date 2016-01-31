@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [3.2.0] - 2015-01-30
+### Added
+- Inputs support mouse buttons
+
 ## [3.1.1] - 2015-01-30
 ### Fixed
 - allow `game.switchScene()` during scene enter script
