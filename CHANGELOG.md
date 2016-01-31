@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [3.1.1] - 2015-01-30
+### Fixed
+- allow `game.switchScene()` during scene enter script
+
 ## [3.1.0] - 2015-01-30
 ### Added
 - match-center system
