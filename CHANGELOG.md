@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [3.1.0] - 2015-01-30
+### Added
+- match-center system
+
 ## [3.0.2] - 2015-12-30
 ### Fixed
 - Fix soundloader bug.
