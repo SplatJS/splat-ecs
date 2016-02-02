@@ -6,7 +6,7 @@
   "scripts": {
     "lint-js": "eslint lib",
     "docs": "jsdoc lib -d docs -r README.md",
-    "build": "npm run lint-js && npm run build-docs"
+    "build": "npm run lint-js && npm run docs"
   },
   "repository": {
     "type": "git",
