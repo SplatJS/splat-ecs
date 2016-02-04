@@ -5,7 +5,7 @@
   "main": "lib/main.js",
   "scripts": {
     "lint-js": "eslint lib",
-    "docs": "jsdoc lib -d docs -r README.md",
+    "docs": "jsdoc lib -c jsdoc/conf.json -d docs -r README.md",
     "build": "npm run lint-js && npm run docs"
   },
   "repository": {
