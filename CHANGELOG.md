@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Changed
+- Renamed `game.input` to `game.inputs`.
 - Moved `zindex` component into the `position` component's `z` property.
 
 ## [3.2.0] - 2015-01-30
