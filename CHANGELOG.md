@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Changed
+- Change `contstrain-to-playable-area` to `constrain-position`, and make the system use an entity for the area.
 - Renamed `game.input` to `game.inputs`.
 - Moved `zindex` component into the `position` component's `z` property.
 
