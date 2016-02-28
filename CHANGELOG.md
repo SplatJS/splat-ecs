@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Changed
+- Moved `zindex` component into the `position` component's `z` property.
 
 ## [3.2.0] - 2015-01-30
 ### Added
