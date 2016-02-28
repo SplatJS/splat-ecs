@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [4.0.0] - 2016-02-28
 ### Changed
 - Change `contstrain-to-playable-area` to `constrain-position`, and make the system use an entity for the area.
 - Renamed `game.input` to `game.inputs`.
