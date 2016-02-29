@@ -3,7 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [4.1.0] - 2016-02-29
 - Fix bug in game.js where `input` needed to be `inputs`.
+- Add `matchCenterX` and `matchCenterY` systems
 
 ## [4.0.0] - 2016-02-28
 ### Changed
