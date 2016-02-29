@@ -2,7 +2,7 @@
 
 A 2d HTML5 Canvas game engine
 
-Splat ECS is a 2d game engine made for creating multi-platform games entirely in JavaScript. Splat ECS is built around [entity component systems](https://en.wikipedia.org/wiki/Entity_component_system), which is flexible and allows composition of behaviors.
+Splat ECS is a 2d game engine made for creating multi-platform games entirely in JavaScript. Splat ECS is built around the [Entity Component System](https://en.wikipedia.org/wiki/Entity_component_system) pattern, which is flexible and promotes composition of behaviors.
 
 # Features
 
@@ -15,18 +15,21 @@ Splat ECS is a 2d game engine made for creating multi-platform games entirely in
 * A\* Pathfinding
 * Particles
 
-# Supported Platforms
+# Supported (tested) Platforms
 
 * Chrome (desktop & mobile)
 * Firefox
 * Internet Explorer (desktop & mobile)
 * Safari (desktop & mobile)
+* Mac using [Electron](https://github.com/atom/electron)
+* Linux x64 using [Electron](https://github.com/atom/electron)
 * iOS using [Ejecta](http://impactjs.com/ejecta)
 * Chrome Web Store
 
 Splat ECS works in PhoneGap/Cordova, but it seems like the apps it produces lack hardware acceleration, making games unplayable.
+Splat ECS may or may not work on other platforms, please let us know what you find out.
 
-# Create a new Game
+# Create a new Game (recommended)
 
 [Fork the starter project](https://github.com/SplatJS/splat-ecs-starter-project)
 
@@ -43,15 +46,10 @@ Then use [browserify](http://browserify.org/) to bundle your game as a single Ja
 
 # Games using Splat ECS
 
-* [Splat Pong](https://github.com/SplatJS/splatpong) is a good tutorial project to read through.
-* [SyRUSH](http://twoscoopgames.com/syrush/)
-* [Stanley Squeaks and the Emerald Burrito](http://twoscoopgames.com/stanleysqueaks/)
-* [Mr. Fluffykin's Great Sorting Adventure](http://twoscoopgames.com/fluffykins/)
-* [Arkeynoid](http://mintchipleaf.com/games/ludum/)
-* [Kickbot](http://twoscoopgames.com/kickbot/)
-* [base.jump](http://mintchipleaf.com/games/basejump/)
-* [Apartment 213](http://twoscoopgames.com/apartment213/)
-* [Scurry](http://twoscoopgames.com/scurry/)
-* [Echo Bat](http://mintchipleaf.com/games/echobat/)
+* [Splat ECS starter project](https://github.com/SplatJS/splat-ecs-starter-project)
+* [Cluster Junk](https://github.com/TwoScoopGames/Cluster-Junk)
+* [Treatment and Control](https://github.com/TwoScoopGames/Treatment-and-Control)
+* [Uprooted](https://github.com/TwoScoopGames/ld32)
+* [The Day the World Changed](https://github.com/TwoScoopGames/ggj15)
 
 Send a pull request to add your game to the list!

@@ -1,75 +1,118 @@
-# 3.0.2
+# Change Log
+All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](http://semver.org/).
 
-Fix keyboard events bubbling outside of game. Helps when a game is inside of an iframe.
+## [Unreleased]
 
-# 3.0.1
+## [4.1.0] - 2016-02-29
+- Fix bug in game.js where `input` needed to be `inputs`.
+- Add `matchCenterX` and `matchCenterY` systems
 
-Fix infinite loop with unresolvable collisions.
+## [4.0.0] - 2016-02-28
+### Changed
+- Change `contstrain-to-playable-area` to `constrain-position`, and make the system use an entity for the area.
+- Renamed `game.input` to `game.inputs`.
+- Moved `zindex` component into the `position` component's `z` property.
 
-# 3.0.0
+## [3.2.0] - 2015-01-30
+### Added
+- Inputs support mouse buttons
 
-Simulate the game at the same frequency independant of the drawing framerate.
-There are no breaking API changes, but the games will run differently now, thus justifying a major version number.
+## [3.1.1] - 2015-01-30
+### Fixed
+- allow `game.switchScene()` during scene enter script
 
-# 2.5.0
+## [3.1.0] - 2015-01-30
+### Added
+- match-center system
 
-Pause scenes and mute audio when tab loses focus.
+## [3.0.2] - 2015-12-30
+### Fixed
+- Fix soundloader bug.
+- Default rotation.x and rotation.y to the center of the entity.
 
-# 2.4.0
+## [3.0.1] - 2015-12-30
+### Fixed
+- Remove deleted entities from collision lists.
 
-Add support for Game Center leaderboards and achievements.
-Add support for In-App Purchases. Not to be used for evil!
-Add new Button class to make animated buttons much easier.
-Add new Particle engine.
+## [3.0.0] - 2015-12-30
+### Added
+- Add `instantiatePrefab` function to instantiate new entities from prefabs
+### Changed
+- `Game` constructor now loads all the json files by itself. Now it only needs 2 arguments.
+### Fixed
+- animation frame splitting now copies all animation properties, and doesn't lose any
 
-# 2.3.0
+## [2.0.0] - 2015-12-28
+### Removed
+- remove magical "splatjs:" way of loading systems.
 
-Add Animation.rotateClockwise()/.rotateCounterclockwise() and buffer.rotateClockwise()/.rotateCounterclickwise(). Add AnimationLoader support for rotation.
+## [1.0.0] - 2015-12-28
+### Changed
+- automatically size the canvas based on a selectable algorithm.
+### Added
+- matchCanvasSize system to make an entity the same size as the canvas
+- matchAspectRatio system to make an entity match the aspect ratio of another entity
 
-# 2.2.0
+## [0.7.0] - 2015-12-21
+### Added
+- add `Input.buttonPressed()` and `Input.buttonReleased()`
 
-Change Entity.solveCollisions() to return an array of entities that were involved in collisions.
+## [0.6.2] - 2015-12-21
+### Added
+- add warnings about bad image component values and provide defaults for unset values
+### Fixed
+- fix bug where animations wouldn't work
 
-# 2.1.0
+## [0.6.1] - 2015-12-20
+### Fixed
+- mouse coordinates scale correctly when no css is applied to canvas
 
-Way better collision solving.
+## [0.6.0] - 2015-12-20
+### Changed
+- use box-intersect module for faster collision detection
 
-# 2.0.0
+## [0.5.0] - 2015-12-19
+### Added
+- window.timeSystems() to log timings of ECS systems
+### Changed
+- Speed up advanceAnimations system
 
-Implement volume control and change how mute works.
+## [0.4.2] - 2015-12-19
+### Fixed
+- applyMovement2d never found entities
 
-# 1.3.0
+## [0.4.1] - 2015-12-17
+### Fixed
+- Readme typo
+- Format changelog
 
-Add openUrl(). And Mouse.onmouseup.
+## [0.4.0] - 2015-12-17
+### Changed
+- Upgrade to entity-component-system 2.0.0
 
-# 1.2.0
+## [0.3.2]
+- Add method to reset box collider cache
 
-Add optional bounding rectangle to Mouse.isPressed(). This makes the API more similar to consumePressed().
+## [0.3.1]
+- Un-scale the viewport when it is reset
 
-# 1.1.2
+## [0.3.0]
+- Support scaling of viewport through camera
+- Draw custom buffer for an entity if it is specified
 
-Fix iPhone/iPad detection.
+## [0.2.0]
+- Support rotation when drawing images.
 
-# 1.1.1
+## [0.1.1]
+- Log more info on no such image error
 
-Include ad sizes.
+## [0.1.0]
+- Add matchParent system.
+- Allow sound loop start and end settings
 
-# 1.1.0
+## [0.0.1]
+- Add a way to remove a deleted entity from the collision detection cache.
 
-Add advertising support. Currently only uses iAd in Ejecta.
-
-# 1.0.1
-
-Fix mouse coordinates in Ejecta when canvas is scaled.
-
-# 1.0.0
-
-Convert save data to async API so it works with Chrome Apps. This is a breaking change, so respecting semver makes me bump the version to 1.0.0. :-/
-
-# 0.1.6
-
-Fix scaling on Ejecta. You must now specify canvas.width/height in JS instead of HTML.
-
-# 0.1.5
-
-Fix font loading in Firefox. It doesn't like single quotes.
+## [0.0.0]
+- Fork from original splatjs project.

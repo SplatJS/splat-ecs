@@ -1,13 +1,12 @@
 {
   "name": "splat-ecs",
-  "version": "0.0.0",
+  "version": "4.1.0",
   "description": "A 2D HTML5 Canvas game engine",
   "main": "lib/main.js",
   "scripts": {
-    "lint-js": "find lib -iname \"*.js\" | xargs jshint",
-    "build-js": "node build.js",
-    "build-docs": "find lib -iname \"*.js\" -o -iname \"*.jsdoc\" | xargs jsdoc -d docs README.md",
-    "build": "npm run lint-js && npm run build-js && npm run build-docs"
+    "lint-js": "eslint lib",
+    "docs": "jsdoc lib -c jsdoc/conf.json -d docs -r README.md",
+    "build": "npm run lint-js && npm run docs"
   },
   "repository": {
     "type": "git",
@@ -26,40 +25,14 @@
   },
   "homepage": "https://github.com/SplatJS/splat-ecs",
   "dependencies": {
-    "entity-component-system": "^1.2.1",
+    "box-intersect": "^1.0.1",
+    "entity-component-system": "^2.2.0",
     "game-keyboard": "0.1.0",
     "mersenne-twister": "^1.0.1",
     "time-accumulator": "0.0.0"
   },
   "devDependencies": {
-    "browserify": "~3.24.11",
-    "jsdoc": "^3.3.0-alpha5",
-    "jshint": "^2.4.4",
-    "uglifyify": "^2.4.0"
-  },
-  "jshintConfig": {
-    "camelcase": true,
-    "curly": true,
-    "eqeqeq": true,
-    "forin": true,
-    "freeze": true,
-    "immed": true,
-    "indent": 4,
-    "latedef": "nofunc",
-    "newcap": true,
-    "noarg": true,
-    "noempty": true,
-    "nonbsp": true,
-    "nonew": true,
-    "quotmark": "double",
-    "unused": "strict",
-    "trailing": true,
-    "browser": true,
-    "devel": true,
-    "globalstrict": true,
-    "globals": {
-      "module": false,
-      "require": false
-    }
+    "eslint": "^1.10.1",
+    "jsdoc": "^3.4.0"
   }
 }
