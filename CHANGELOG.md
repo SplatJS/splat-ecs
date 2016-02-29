@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+- Fix more places in game.js where `input` needed to be `inputs`.
 
 ## [4.1.0] - 2016-02-29
 - Fix bug in game.js where `input` needed to be `inputs`.
