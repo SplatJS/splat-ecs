@@ -2,7 +2,7 @@
 
 A 2d HTML5 Canvas game engine
 
-Splat ECS is a 2d game engine made for creating multi-platform games entirely in JavaScript. Splat ECS is built around the [Entity Component System](https://en.wikipedia.org/wiki/Entity_component_system) pattern, which is flexible and promotes composition of behaviors.
+Splat ECS is a 2d game engine made for creating multi-platform games entirely in JavaScript. Splat ECS is built around the [Entity Component System](https://github.com/ericlathrop/entity-component-system) pattern, which is flexible and promotes composition of behaviors.
 
 # Features
 
