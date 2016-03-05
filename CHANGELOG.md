@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [4.1.0] - 2016-02-29
+- Fix bug in game.js where `input` needed to be `inputs`.
+- Add `matchCenterX` and `matchCenterY` systems
+
 ## [4.0.0] - 2016-02-28
 ### Changed
 - Change `contstrain-to-playable-area` to `constrain-position`, and make the system use an entity for the area.

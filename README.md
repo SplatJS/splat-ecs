@@ -51,5 +51,6 @@ Then use [browserify](http://browserify.org/) to bundle your game as a single Ja
 * [Treatment and Control](https://github.com/TwoScoopGames/Treatment-and-Control)
 * [Uprooted](https://github.com/TwoScoopGames/ld32)
 * [The Day the World Changed](https://github.com/TwoScoopGames/ggj15)
+* [Zen Madness](https://github.com/aquisenberry/ggj_meditate)
 
 Send a pull request to add your game to the list!
