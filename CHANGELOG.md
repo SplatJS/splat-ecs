@@ -4,12 +4,21 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [5.0.0] - 2016-03-05
+### Removed
+- `match-center` system, you should use `match-center-x` and `match-center-y` to achieve the same thing.
+### Added
+- Gamepad support!
+
 ## [4.1.1] - 2016-02-29
+### Fixed
 - Fix `constrainPosition` system
 - Fix more places in game.js where `input` needed to be `inputs`.
 
 ## [4.1.0] - 2016-02-29
+### Fixed
 - Fix bug in game.js where `input` needed to be `inputs`.
+### Added
 - Add `matchCenterX` and `matchCenterY` systems
 
 ## [4.0.0] - 2016-02-28
