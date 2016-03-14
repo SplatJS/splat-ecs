@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Fixed
+- Mouse bug where input sometimes doesn't register
+### Added
 - Add `game.registerPrefab` and `game.registerPrefabs` to create new prefabs at runtime.
 
 ## [5.0.0] - 2016-03-05
