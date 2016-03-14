@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Make draw ordering stable when entities are on the same Y position
 ### Added
 - Add `game.registerPrefab` and `game.registerPrefabs` to create new prefabs at runtime.
+- Suppport `alpha` transparency in `image` component.
 
 ## [5.0.0] - 2016-03-05
 ### Removed
