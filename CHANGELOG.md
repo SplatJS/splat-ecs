@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [5.1.0] - 2016-03-13
 ### Fixed
 - Mouse bug where input sometimes doesn't register
 - Make draw ordering stable when entities are on the same Y position
