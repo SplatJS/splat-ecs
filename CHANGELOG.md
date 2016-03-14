@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Fixed
 - Mouse bug where input sometimes doesn't register
+- Make draw ordering stable when entities are on the same Y position
 ### Added
 - Add `game.registerPrefab` and `game.registerPrefabs` to create new prefabs at runtime.
 
