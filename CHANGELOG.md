@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [5.1.1] - 2016-03-17
+### Fixed
+- Mouse button should default to not pressed
+
 ## [5.1.0] - 2016-03-13
 ### Fixed
 - Mouse bug where input sometimes doesn't register
