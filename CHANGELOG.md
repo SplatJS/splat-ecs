@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [5.1.2] - 2016-03-23
+### Fixed
+- Updated `html5-gamepad` to fix crash in Safari
+
 ## [5.1.1] - 2016-03-17
 ### Fixed
 - Mouse button should default to not pressed
