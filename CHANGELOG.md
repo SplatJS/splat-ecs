@@ -4,6 +4,22 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [5.1.2] - 2016-03-23
+### Fixed
+- Updated `html5-gamepad` to fix crash in Safari
+
+## [5.1.1] - 2016-03-17
+### Fixed
+- Mouse button should default to not pressed
+
+## [5.1.0] - 2016-03-13
+### Fixed
+- Mouse bug where input sometimes doesn't register
+- Make draw ordering stable when entities are on the same Y position
+### Added
+- Add `game.registerPrefab` and `game.registerPrefabs` to create new prefabs at runtime.
+- Suppport `alpha` transparency in `image` component.
+
 ## [5.0.0] - 2016-03-05
 ### Removed
 - `match-center` system, you should use `match-center-x` and `match-center-y` to achieve the same thing.
