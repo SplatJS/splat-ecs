@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - `random.inRange()` & `random.from()`
 - `apply-shake` and `revert-shake` systems
+- Use `"all"` in `systems.json` for a system to apply to all scenes. This replaces the array.
 ### Fixed
 - `game.sounds.setVolume` now works
 
