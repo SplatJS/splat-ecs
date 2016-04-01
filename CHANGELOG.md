@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- `random.inRange()` & `random.from()`
+- `apply-shake` and `revert-shake` systems
 
 ## [5.1.2] - 2016-03-23
 ### Fixed
