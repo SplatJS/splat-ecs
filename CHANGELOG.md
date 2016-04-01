@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - `random.inRange()` & `random.from()`
 - `apply-shake` and `revert-shake` systems
+### Fixed
+- `game.sounds.setVolume` now works
 
 ## [5.1.2] - 2016-03-23
 ### Fixed
