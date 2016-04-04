@@ -9,6 +9,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - `random.inRange()` & `random.from()`
 - `apply-shake` and `revert-shake` systems
 - Use `"all"` in `systems.json` for a system to apply to all scenes. This replaces the array.
+### Changed
+- Improved the look of the FPS counter
 ### Fixed
 - `game.sounds.setVolume` now works
 
