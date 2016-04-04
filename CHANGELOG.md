@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
+- `timer` component now has a `loop` flag to make it repeat
 - `applyAcceleration` system
 - `random.inRange()` & `random.from()`
 - `apply-shake` and `revert-shake` systems
