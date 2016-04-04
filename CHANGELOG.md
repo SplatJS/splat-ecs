@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- `timer` component now has a `loop` flag to make it repeat
+- `applyAcceleration` system
+- `random.inRange()` & `random.from()`
+- `apply-shake` and `revert-shake` systems
+- Use `"all"` in `systems.json` for a system to apply to all scenes. This replaces the array.
+### Fixed
+- `game.sounds.setVolume` now works
 
 ## [5.1.2] - 2016-03-23
 ### Fixed
