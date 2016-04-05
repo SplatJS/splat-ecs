@@ -12,8 +12,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - `random.inRange()` & `random.from()`
 - `apply-shake` and `revert-shake` systems
 - Use `"all"` in `systems.json` for a system to apply to all scenes. This replaces the array.
+
 ### Changed
 - Improved the look of the FPS counter
+
 ### Fixed
 - `game.sounds.setVolume` now works
 
@@ -29,6 +31,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - Mouse bug where input sometimes doesn't register
 - Make draw ordering stable when entities are on the same Y position
+
 ### Added
 - Add `game.registerPrefab` and `game.registerPrefabs` to create new prefabs at runtime.
 - Suppport `alpha` transparency in `image` component.
@@ -36,6 +39,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [5.0.0] - 2016-03-05
 ### Removed
 - `match-center` system, you should use `match-center-x` and `match-center-y` to achieve the same thing.
+
 ### Added
 - Gamepad support!
 
@@ -47,6 +51,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [4.1.0] - 2016-02-29
 ### Fixed
 - Fix bug in game.js where `input` needed to be `inputs`.
+
 ### Added
 - Add `matchCenterX` and `matchCenterY` systems
 
@@ -80,8 +85,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [3.0.0] - 2015-12-30
 ### Added
 - Add `instantiatePrefab` function to instantiate new entities from prefabs
+
 ### Changed
 - `Game` constructor now loads all the json files by itself. Now it only needs 2 arguments.
+
 ### Fixed
 - animation frame splitting now copies all animation properties, and doesn't lose any
 
@@ -92,6 +99,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.0] - 2015-12-28
 ### Changed
 - automatically size the canvas based on a selectable algorithm.
+
 ### Added
 - matchCanvasSize system to make an entity the same size as the canvas
 - matchAspectRatio system to make an entity match the aspect ratio of another entity
@@ -103,6 +111,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.6.2] - 2015-12-21
 ### Added
 - add warnings about bad image component values and provide defaults for unset values
+
 ### Fixed
 - fix bug where animations wouldn't work
 
@@ -117,6 +126,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.5.0] - 2015-12-19
 ### Added
 - window.timeSystems() to log timings of ECS systems
+
 ### Changed
 - Speed up advanceAnimations system
 
