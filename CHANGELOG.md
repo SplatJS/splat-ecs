@@ -3,7 +3,10 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [5.2.0] - 2016-04-05
 ### Added
+- `importTilemap` function for importing [Tiled](http://www.mapeditor.org/) tilemaps.
 - `timer` component now has a `loop` flag to make it repeat
 - `applyAcceleration` system
 - `random.inRange()` & `random.from()`
