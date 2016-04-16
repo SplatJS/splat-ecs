@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Fixed
+- `matchParent` system now also matches the z property on the `position` component
 ### Added
 - `decayLifeSpan` system
 - `particles` module
