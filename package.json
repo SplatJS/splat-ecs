@@ -26,6 +26,7 @@
   "homepage": "https://github.com/SplatJS/splat-ecs",
   "dependencies": {
     "box-intersect": "^1.0.1",
+    "easing-js": "^1.0.1",
     "entity-component-system": "^2.2.0",
     "game-keyboard": "0.1.0",
     "html5-gamepad": "^0.1.4",
