@@ -7,13 +7,15 @@ Splat ECS is a 2d game engine made for creating multi-platform games entirely in
 # Features
 
 * Rectangles!
-* Keyboard, mouse, and touch input
+* Keyboard, mouse, touch, & gamepad input
 * Sounds and music (Web Audio API and HTML5 Audio)
 * Sprite animation
 * Asset loading, and built-in loading screen
 * Games work well on phones, tablets, and desktop browsers.
 * A\* Pathfinding
 * Particles
+* Tiled map editor support
+* Easing
 
 # Supported (tested) Platforms
 
@@ -47,10 +49,12 @@ Then use [browserify](http://browserify.org/) to bundle your game as a single Ja
 # Games using Splat ECS
 
 * [Splat ECS starter project](https://github.com/SplatJS/splat-ecs-starter-project)
+* [Polymorphic](https://github.com/RiseAndShineGames/Polymorphic)
+* [Electropolis](https://github.com/twoscoopgames/electropolis)
 * [Cluster Junk](https://github.com/TwoScoopGames/Cluster-Junk)
+* [Zen Madness](https://github.com/aquisenberry/ggj_meditate)
 * [Treatment and Control](https://github.com/TwoScoopGames/Treatment-and-Control)
 * [Uprooted](https://github.com/TwoScoopGames/ld32)
 * [The Day the World Changed](https://github.com/TwoScoopGames/ggj15)
-* [Zen Madness](https://github.com/aquisenberry/ggj_meditate)
 
 Send a pull request to add your game to the list!

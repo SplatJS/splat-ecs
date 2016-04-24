@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [5.4.0] - 2016-04-23
+### Added
+- `applyEasing` system
+
 ## [5.3.0] - 2016-04-16
 ### Fixed
 - `matchParent` system now also matches the z property on the `position` component
