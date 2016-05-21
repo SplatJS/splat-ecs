@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [5.5.0] - 2016-05-20
+### Added
+- Entities can act as virtual buttons now with the `setVirtualButtons` system.
+
 ## [5.4.0] - 2016-04-23
 ### Added
 - `applyEasing` system
