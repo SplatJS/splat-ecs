@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [5.5.1] - 2016-06-04
+### Changed
+- Updated `entity-component-system` module.
+
 ## [5.5.0] - 2016-05-20
 ### Added
 - Entities can act as virtual buttons now with the `setVirtualButtons` system.
