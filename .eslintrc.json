@@ -4,7 +4,7 @@
         "block-spacing": [ 2, "always" ],
         "comma-style": [ 2, "last" ],
         "eol-last": [ 2, "unix" ],
-        "indent": [ 2, "tab" ],
+        "indent": [ 2, 2 ],
         "key-spacing": [ 2, { "beforeColon": false, "afterColon": true } ],
         "keyword-spacing": [ 2 ],
         "linebreak-style": [ 2, "unix" ],
