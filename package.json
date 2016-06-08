@@ -34,7 +34,7 @@
     "time-accumulator": "0.0.0"
   },
   "devDependencies": {
-    "eslint": "^1.10.1",
+    "eslint": "^2.11.1",
     "jsdoc": "^3.4.0"
   }
 }
