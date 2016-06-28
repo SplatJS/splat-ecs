@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [6.0.1] - 2016-06-27
+### Fixed
+- Handle nonexistant tileset properties on Tiled importer
+
 ## [6.0.0] - 2016-06-04
 ### Changed
 - Update renderer systems to only have 2 arguments
