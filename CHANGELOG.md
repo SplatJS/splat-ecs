@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [6.1.0] - 2016-07-02
+### Added
+- `importTilemap` can now import "collection of images" tilesets
+
 ## [6.0.1] - 2016-06-27
 ### Fixed
 - Handle nonexistant tileset properties on Tiled importer
