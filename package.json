@@ -27,7 +27,7 @@
   "dependencies": {
     "box-intersect": "^1.0.1",
     "easing-js": "^1.0.1",
-    "entity-component-system": "^3.0.0",
+    "entity-component-system": "^4.0.3",
     "game-keyboard": "0.1.0",
     "html5-gamepad": "^0.1.4",
     "mersenne-twister": "^1.0.1",
