@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Multiple scenes can run at the same time. This can be used to draw a UI scene
+  on top of a game scene.
+- Scenes now have a `speed` that effects how fast time passes
+### Changed
+- Systems have been separated into `simulation` and `renderer` folders
+- Upgraded to
+  [`entity-component-system`](https://github.com/ericlathrop/entity-component-system/blob/master/README.md)
+  v4.x, which is a breaking change that passes through to your game via
+  `game.entities`.
 
 ## [6.1.0] - 2016-07-02
 ### Added
