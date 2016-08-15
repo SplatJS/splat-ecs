@@ -13,6 +13,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   [`entity-component-system`](https://github.com/ericlathrop/entity-component-system/blob/master/README.md)
   v4.x, which is a breaking change that passes through to your game via
   `game.entities`.
+- Convert the `match-center-x` and `match-center-y` systems to just
+  `match-center`.
 
 ## [6.1.0] - 2016-07-02
 ### Added
