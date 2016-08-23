@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-## [7.0.0] - 2016-08-21
+## [7.0.0] - 2016-08-23
 ### Added
 - Multiple scenes can run at the same time. This can be used to draw a UI scene
   on top of a game scene.
