@@ -14,6 +14,7 @@ _ Support Tiled zlib & base64 layers
 - Multiple scenes can run at the same time. This can be used to draw a UI scene
   on top of a game scene.
 - Scenes now have a `speed` that effects how fast time passes
+
 ### Changed
 - Systems have been separated into `simulation` and `renderer` folders
 - Upgraded to
