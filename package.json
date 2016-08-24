@@ -1,6 +1,6 @@
 {
   "name": "splat-ecs",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "description": "A 2D HTML5 Canvas game engine",
   "main": "lib/main.js",
   "scripts": {
@@ -31,6 +31,7 @@
     "game-keyboard": "0.1.0",
     "html5-gamepad": "^0.1.4",
     "mersenne-twister": "^1.1.0",
+    "pako": "^1.0.3",
     "time-accumulator": "0.0.0"
   },
   "devDependencies": {
