@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [7.2.1] - 2016-08-27
+### Fixed
+- Property names of size component
+
 ## [7.2.0] - 2016-08-27
 ### Added
 - Support Tiled layer visibility by not importing invisible layers
