@@ -3,11 +3,17 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [7.2.0] - 2016-08-27
+### Added
+- Support Tiled layer visibility by not importing invisible layers
+
 ### Changed
 - Move some new systems to the correct folder
 
 ### Fixed
-- Don't import invisible layers in Tiled maps
+- Use new ECS functions in background-color system
+- Use new ECS functions in follow-mouse system
 
 ## [7.1.0] - 2016-08-23
 ### Added
