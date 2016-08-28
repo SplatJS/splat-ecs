@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [7.2.2] - 2016-08-28
+### Fixed
+- Small performance improvement when drawing lots of images. Don't draw anything outside of camera.
+
 ## [7.2.1] - 2016-08-27
 ### Fixed
 - Property names of size component
