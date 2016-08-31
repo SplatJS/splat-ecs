@@ -78,3 +78,21 @@ The Splat ECS sample game is just white screen with a black-outlined square you 
 See more Splat games at [http://splatjs.com/](http://splatjs.com/)
 
 Send a pull request to add your game to the list!
+
+## Contributing
+
+If you are interested in participating in this project, please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for details on our code of conduct.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/SplatJS/splat-ecs/tags).
+
+## Authors
+
+* **[Eric Lathrop](https://github.com/ericlathrop)** - *Initial work*
+
+See also the list of [contributors](https://github.com/SplatJS/splat-ecs/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.TXT](LICENSE.TXT) file for details
