@@ -1,4 +1,4 @@
-![Splat ECS](./images/splat-ecs-logo.png)
+![Splat ECS](./images/splat-logo.png)
 
 A 2d HTML5 Canvas game engine
 
