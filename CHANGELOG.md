@@ -3,9 +3,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [7.3.0] - 2016-09-02
 ### Added
 - New `box-group-collider` system that supports `onEnter`/`onExit`/`script`
   event scripts, and allows you to group entities to improve performance.
+
 ### Deprecated
 - `box-collider` system. Upgrade to `box-group-collider`.
 
