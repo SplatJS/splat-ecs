@@ -65,7 +65,6 @@ The Splat ECS sample game is just white screen with a black-outlined square you 
 * [Cluster Junk](https://github.com/TwoScoopGames/Cluster-Junk)
 * [Cali Bunga](https://riseshinegames.itch.io/cali-bunga)
 * [Flip Flap Pong](https://riseshinegames.itch.io/flip-flap-pong)
-
 * [Polymorphic](http://riseandshinegames.github.io/Polymorphic/build/)
 * [Electropolis](https://two-scoop-games.itch.io/electropolis)
 * [Morning Ritual](http://twoscoopgames.com/morningritual/game/)
