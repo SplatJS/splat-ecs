@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Fixed
+- Filter images before sorting them to improve performance.
 
 ## [7.3.0] - 2016-09-02
 ### Added
