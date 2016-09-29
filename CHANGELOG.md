@@ -3,8 +3,16 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [7.4.0] - 2016-09-29
 ### Fixed
 - Filter images before sorting them to improve performance.
+
+### Added
+- Scene configuration data is now available as `game.sceneConfig`. This can be
+  useful for configuring systems on a scene-by-scene basis.
+- The `box-group-collider` system now supports a list of groups to skip
+  collision checks against in `game.sceneConfig`.
 
 ## [7.3.0] - 2016-09-02
 ### Added
