@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [7.4.1] - 2016-10-14
+### Fixed
+- Correct the y position of non-tile-size tiles
+
 ## [7.4.0] - 2016-09-29
 ### Fixed
 - Filter images before sorting them to improve performance.
