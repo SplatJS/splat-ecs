@@ -29,7 +29,7 @@
     "easing-js": "^1.0.1",
     "entity-component-system": "^4.0.4",
     "game-keyboard": "0.1.0",
-    "html5-gamepad": "^0.1.4",
+    "html5-gamepad": "^1.0.0",
     "mersenne-twister": "^1.1.0",
     "pako": "^1.0.3",
     "time-accumulator": "0.0.0"
