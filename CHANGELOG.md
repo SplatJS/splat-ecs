@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [7.5.1] - 2017-01-21
 ### Fixed
 - Error handling stack traces in `getMultiple` and `setMultiple`.
 - Gamepads in Chrome
