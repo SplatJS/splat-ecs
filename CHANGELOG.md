@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ## [7.6.0] - 2017-01-31
+### Fixed
+- Crash in Safari due to missing gamepad suppport
+
 ### Added
 - z-axis support for velocity
 
