@@ -25,3 +25,10 @@
  * @external AudioContext
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/AudioContext AudioContext at the Mozilla Developer Network}
  */
+
+/**
+ * A container for all entities in a scene.
+ * @typedef EntityPool
+ * @external EntityPool
+ * @see {@link https://github.com/ericlathrop/entity-component-system#entitypool EntityPool documentation on Github}
+ */
