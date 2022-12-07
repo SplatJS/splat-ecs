@@ -4,12 +4,172 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [7.6.0] - 2017-01-31
+### Fixed
+- Crash in Safari due to missing gamepad suppport
+
+### Added
+- z-axis support for velocity
+
+## [7.5.1] - 2017-01-21
+### Fixed
+- Error handling stack traces in `getMultiple` and `setMultiple`.
+- Gamepads in Chrome
+
+## [7.5.0] - 2016-10-28
+### Fixed
+- Bug where sound said it was loaded, but wasn't
+- Crash on undefined sound
+- Object leak in touch code
+- Function leak in draw image system
+
+### Added
+- Set virtual axes with `game.inputs.setAxis()`. Useful for on-screen joysticks
+  (coming soon).
+
+## [7.4.1] - 2016-10-14
+### Fixed
+- Correct the y position of non-tile-size tiles
+
+## [7.4.0] - 2016-09-29
+### Fixed
+- Filter images before sorting them to improve performance.
+
+### Added
+- Scene configuration data is now available as `game.sceneConfig`. This can be
+  useful for configuring systems on a scene-by-scene basis.
+- The `box-group-collider` system now supports a list of groups to skip
+  collision checks against in `game.sceneConfig`.
+
+## [7.3.0] - 2016-09-02
+### Added
+- New `box-group-collider` system that supports `onEnter`/`onExit`/`script`
+  event scripts, and allows you to group entities to improve performance.
+
+### Deprecated
+- `box-collider` system. Upgrade to `box-group-collider`.
+
+## [7.2.2] - 2016-08-28
+### Fixed
+- Small performance improvement when drawing lots of images. Don't draw anything outside of camera.
+
+## [7.2.1] - 2016-08-27
+### Fixed
+- Property names of size component
+
+## [7.2.0] - 2016-08-27
+### Added
+- Support Tiled layer visibility by not importing invisible layers
+
+### Changed
+- Move some new systems to the correct folder
+
+### Fixed
+- Use new ECS functions in background-color system
+- Use new ECS functions in follow-mouse system
+
+## [7.1.0] - 2016-08-23
+### Added
+- Support Tiled layer offsets
+- Support Tiled zlib & base64 layers
+
+## [7.0.0] - 2016-08-23
+### Added
+- Multiple scenes can run at the same time. This can be used to draw a UI scene
+  on top of a game scene.
+- Scenes now have a `speed` that effects how fast time passes
+
+### Changed
+- Systems have been separated into `simulation` and `renderer` folders
+- Upgraded to
+  [`entity-component-system`](https://github.com/ericlathrop/entity-component-system/blob/master/README.md)
+  v4.x, which is a breaking change that passes through to your game via
+  `game.entities`.
+- Convert the `match-center-x` and `match-center-y` systems to just
+  `match-center`.
+
+## [6.1.0] - 2016-07-02
+### Added
+- `importTilemap` can now import "collection of images" tilesets
+
+## [6.0.1] - 2016-06-27
+### Fixed
+- Handle nonexistant tileset properties on Tiled importer
+
+## [6.0.0] - 2016-06-04
+### Changed
+- Update renderer systems to only have 2 arguments
+### Removed
+- Old touch button support. Not needed since entities can now be buttons
+
+## [5.5.1] - 2016-06-04
+### Changed
+- Updated `entity-component-system` module.
+
+## [5.5.0] - 2016-05-20
+### Added
+- Entities can act as virtual buttons now with the `setVirtualButtons` system.
+
+## [5.4.0] - 2016-04-23
+### Added
+- `applyEasing` system
+
+## [5.3.0] - 2016-04-16
+### Fixed
+- `matchParent` system now also matches the z property on the `position` component
+### Added
+- `decayLifeSpan` system
+- `particles` module
+
+## [5.2.0] - 2016-04-05
+### Added
+- `importTilemap` function for importing [Tiled](http://www.mapeditor.org/) tilemaps.
+- `timer` component now has a `loop` flag to make it repeat
+- `applyAcceleration` system
+- `random.inRange()` & `random.from()`
+- `apply-shake` and `revert-shake` systems
+- Use `"all"` in `systems.json` for a system to apply to all scenes. This replaces the array.
+
+### Changed
+- Improved the look of the FPS counter
+
+### Fixed
+- `game.sounds.setVolume` now works
+
+## [5.1.2] - 2016-03-23
+### Fixed
+- Updated `html5-gamepad` to fix crash in Safari
+
+## [5.1.1] - 2016-03-17
+### Fixed
+- Mouse button should default to not pressed
+
+## [5.1.0] - 2016-03-13
+### Fixed
+- Mouse bug where input sometimes doesn't register
+- Make draw ordering stable when entities are on the same Y position
+
+### Added
+- Add `game.registerPrefab` and `game.registerPrefabs` to create new prefabs at runtime.
+- Suppport `alpha` transparency in `image` component.
+
+## [5.0.0] - 2016-03-05
+### Removed
+- `match-center` system, you should use `match-center-x` and `match-center-y` to achieve the same thing.
+
+### Added
+- Gamepad support!
+
 ## [4.1.1] - 2016-02-29
+### Fixed
 - Fix `constrainPosition` system
 - Fix more places in game.js where `input` needed to be `inputs`.
 
 ## [4.1.0] - 2016-02-29
+### Fixed
 - Fix bug in game.js where `input` needed to be `inputs`.
+
+### Added
 - Add `matchCenterX` and `matchCenterY` systems
 
 ## [4.0.0] - 2016-02-28
@@ -42,8 +202,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [3.0.0] - 2015-12-30
 ### Added
 - Add `instantiatePrefab` function to instantiate new entities from prefabs
+
 ### Changed
 - `Game` constructor now loads all the json files by itself. Now it only needs 2 arguments.
+
 ### Fixed
 - animation frame splitting now copies all animation properties, and doesn't lose any
 
@@ -54,6 +216,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.0] - 2015-12-28
 ### Changed
 - automatically size the canvas based on a selectable algorithm.
+
 ### Added
 - matchCanvasSize system to make an entity the same size as the canvas
 - matchAspectRatio system to make an entity match the aspect ratio of another entity
@@ -65,6 +228,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.6.2] - 2015-12-21
 ### Added
 - add warnings about bad image component values and provide defaults for unset values
+
 ### Fixed
 - fix bug where animations wouldn't work
 
@@ -79,6 +243,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.5.0] - 2015-12-19
 ### Added
 - window.timeSystems() to log timings of ECS systems
+
 ### Changed
 - Speed up advanceAnimations system
 

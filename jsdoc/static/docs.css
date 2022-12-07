@@ -1,0 +1,11 @@
+code {
+	color: #c25;
+	background-color: #f7f7f9;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 1px 3px;
+}
+
+.params .name code {
+	color: #c25;
+}
