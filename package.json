@@ -1,8 +1,9 @@
 {
   "name": "splat-ecs",
-  "version": "7.6.0",
+  "version": "8.0.0",
   "description": "A 2D HTML5 Canvas game engine",
   "main": "lib/main.js",
+  "type": "module",
   "scripts": {
     "lint-js": "eslint lib",
     "docs": "jsdoc lib -c jsdoc/conf.json -d docs -r README.md",
@@ -31,11 +32,40 @@
     "game-keyboard": "0.1.0",
     "html5-gamepad": "^1.0.0",
     "mersenne-twister": "^1.1.0",
-    "pako": "^1.0.3",
+    "pako": "^2.1.0",
     "time-accumulator": "0.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.3.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
     "jsdoc": "^3.4.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType":"module"
+    },
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
   }
 }
